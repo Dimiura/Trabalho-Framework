@@ -111,6 +111,17 @@ header{
   background-color: #0374b5;
 }
 
+#pokemon-list
+{
+  list-style: none;
+}
+
+#pokemon-list li
+{
+  Font-size:18px;
+}
+
+
 .btn-dashboard:hover:before {
   transition: 0.5s all ease;
   left: 0;

@@ -272,6 +272,15 @@
     </div>
   </section>
 
+  <section id="Tools" class="tools d-flex align-items-center">
+    <div class="container-fluid aos-init aos-animate " data-aos="zoom-in-up">
+      <div class="section-titulo">
+        <h2 class="text-white"> API nomes de pokemons </h2>
+      </div>
+      <ul id="pokemon-list"></ul>
+    </div>
+  </section>
+
 
   <!-- Particulas -->
 
@@ -308,12 +317,33 @@
       </div>
     </div>
 
-
+ 
 
   </footer>
 
   <!-- Scripts -->
 
+ 
+  <script>
+    async function fetchPokemonNames() {
+        try {
+            const response = await fetch('https://pokeapi.co/api/v2/pokemon?limit=50');
+            const data = await response.json();
+
+            const pokemonList = document.getElementById('pokemon-list');
+
+            data.results.forEach(pokemon => {
+                const listItem = document.createElement('li');
+                listItem.textContent = pokemon.name;
+                pokemonList.appendChild(listItem);
+            });
+        } catch (error) {
+            console.error('Erro ao buscar nomes de Pokémon:', error);
+        }
+    }
+
+    window.onload = fetchPokemonNames;
+</script>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
