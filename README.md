@@ -9,3 +9,5 @@ Após isso, rode no terminal npm start.
 Um servidor será aberto na porta 3000, ou seja, localhost:3000
 
 Qualquer dúvida por favor nos contactar.
+
+Utilizamos poucos commit's aqui porque propriamente dito fizemos o site praticamente inteiro em call's e depois só fomos subindo as partes praticamente finalizadas.
