@@ -88,7 +88,7 @@ header{
   transition: ease-out 0.3s;
   font-size: 20px;
   outline: none;
-  border: 3px solid #ffd106;
+  border: 3px solid #0374b5;
   text-align: center;
   position: relative;
   z-index: 1;
@@ -108,7 +108,7 @@ header{
   bottom: 0;
   opacity: 0;
   content: "";
-  background-color: #ffd106;
+  background-color: #0374b5;
 }
 
 .btn-dashboard:hover:before {
@@ -124,7 +124,7 @@ header{
   height: 50px;
   border: none;
   color: black;
-  background-color: #ffd106;
+  background-color: #0374b5;
   border-radius: 4px;
   box-shadow: inset 0 0 0 0 #Fff;
   transition: ease-out 0.3s;
@@ -155,6 +155,11 @@ p, li {
 {
   background-color: #000000;
   height: 18%;
+}
+
+#infos
+{
+  background-color:#0374b5
 }
 
 .text-footer
@@ -335,7 +340,7 @@ section {
 }
 
 .features .icon-box h4 a {
-  color: #ffd106 transition ease-in-out 0.3s;
+  color: #0374b5 transition ease-in-out 0.3s;
 }
 
 .features .icon-box p {
@@ -423,7 +428,7 @@ section {
 /* FAQ */
 
 .FAQ {
-  background-color: #fcb900;
+  background-color: #0374b5;
 }
 
 .section-titulo h2 {
@@ -489,11 +494,11 @@ section {
 }
 
 .fa-chevron-circle-down {
-  color: #fcb900;
+  color: #0374b5;
 }
 
 .fa-chevron-circle-up {
-  color: #fcb900;
+  color: #0374b5;
 }
 
 .FAQ .lista-faqs .icon-show {
@@ -505,7 +510,7 @@ section {
 }
 
 .FAQ .lista-faqs a.collapsed:hover {
-  color: #fcb900;
+  color: #0374b5;
 }
 
 .FAQ .lista-faqs a.collapsed .icon-show {
@@ -523,7 +528,7 @@ font-size: 25px;
 position:absolute;
 right: 0;
 left: 20px;
-color: #fcb900;
+color: #0374b5;
 }
 
 @media (max-width: 1200px) {

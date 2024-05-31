@@ -7,8 +7,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="img/logo.ico">
-  <title> Home | Union Cop </title>
+  <link rel="shortcut icon" href="img/logo.png">
+  <title> Home | Framework </title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/style.css">
@@ -34,60 +34,62 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <a href="#" class="navbar-brand">
-          <img id="logo" src="img/logo.png" alt="Union Cop">
+          <img id="logo" src="img/logo.png" alt="Anchieta">
         </a>
         <div class="collapse menu navbar-collapse justify-content-end " id="navbarToggleExternalContent">
           <ul class="navbar-nav ">
             <li class="nav-item active">
-              <a class="nav-link fs-6 text-light nav-hover" href="#home">Home</a>
+              <a class="nav-link fs-6 text-light nav-hover" >Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-6 text-light nav-hover" href="#infos">Informações</a>
+              <a class="nav-link fs-6 text-light nav-hover" onclick="window.location.href='/features'">Informações</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-6 text-light nav-hover" href="#Tools">Tools</a>
+              <a class="nav-link fs-6 text-light nav-hover" onclick="window.location.href='/tools'">Tools</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-6 text-light nav-hover" onclick="window.location.href='/FAQ'"> FAQ</a>
+              <a class="nav-link fs-6 text-light nav-hover" onclick="window.location.href='/faq'" >FAQ</a>
             </li>
+            
           </ul>
           <div class="nav-right px-3">
-            <button onclick="window.location.href='/form'" class="btn btn-dashboard"> Discord </button>
+            <button onclick="window.location.href='/form'" class="btn btn-dashboard"> Cadastro </button>
           </div>
         </div>
       </nav>
     </div>
   </header>
 
+  <!-- FAQ -->
 
   <section id="perguntas" class="FAQ">
     <div class="container aos-init" data-aos="fade-up">
       <div class="section-titulo">
-        <h2 class="text-dark">FAQ </h2>
+        <h2 class="text-white">FAQ </h2>
       </div>
       <div class="lista-faqs">
         <ul>
           <li data-aos="fade-up" data-aos-delay="100" class="aos-init">
             <i class="fas fa-question-circle icon-help" aria-hidden="true"></i>
             <a data-bs-toggle="collapse" class="collapsed" href="#faq-item-1" onclick="return false;"
-              aria-expanded="false"> Sua pergunta aqui?.
+              aria-expanded="false"> o que é EJS?
               <i class="fas fa-chevron-circle-down icon-show" aria-hidden="true"></i>
               <i class="fas fa-chevron-circle-up icon-close" aria-hidden="true"></i>
             </a>
             <div id="faq-item-1" class="collapse">
-              <p class="text-dark">Resposta aqui.
+              <p class="text-dark">É um framework com "poderes", retirando as limitações do html, podendo usar for, if e etc.
               </p>
             </div>
           </li>
           <li data-aos="fade-up" data-aos-delay="100" class="aos-init">
             <i class="fas fa-question-circle icon-help" aria-hidden="true"></i>
             <a data-bs-toggle="collapse" class="collapsed" href="#faq-item-2" onclick="return false;"
-              aria-expanded="false"> Sua pergunta aqui?.
+              aria-expanded="false"> Quanto tempo demorou pra criar?
               <i class="fas fa-chevron-circle-down icon-show" aria-hidden="true"></i>
               <i class="fas fa-chevron-circle-up icon-close" aria-hidden="true"></i>
             </a>
             <div id="faq-item-2" class="collapse">
-              <p class="text-dark">Resposta aqui.
+              <p class="text-dark">Não muito, como o Diego já trabalha na área de front-end tivemos uma luz bem grande quanto a isso.
               </p>
               </p>
             </div>
@@ -95,12 +97,12 @@
           <li data-aos="fade-up" data-aos-delay="100" class="aos-init">
             <i class="fas fa-question-circle icon-help" aria-hidden="true"></i>
             <a data-bs-toggle="collapse" class="collapsed" href="#faq-item-3" onclick="return false;"
-              aria-expanded="false">Sua pergunta aqui?.
+              aria-expanded="false">Como foi feito o fundo desse WEB?
               <i class="fas fa-chevron-circle-down icon-show" aria-hidden="true"></i>
               <i class="fas fa-chevron-circle-up icon-close" aria-hidden="true"></i>
             </a>
             <div id="faq-item-3" class="collapse">
-              <p class="text-dark">Resposta aqui.
+              <p class="text-dark">A respeito do fundo, nós pegamos um "template" de css pronto com as párticulas, precisando apenas inseri-las no html com a classe "firefly"
               </p>
               </p>
             </div>
@@ -108,36 +110,36 @@
           <li data-aos="fade-up" data-aos-delay="100" class="aos-init">
             <i class="fas fa-question-circle icon-help" aria-hidden="true"></i>
             <a data-bs-toggle="collapse" class="collapsed" href="#faq-item-4" onclick="return false;"
-              aria-expanded="false">Sua pergunta aqui?.
+              aria-expanded="false"> Tem alguma animação no site?
               <i class="fas fa-chevron-circle-down icon-show" aria-hidden="true"></i>
               <i class="fas fa-chevron-circle-up icon-close" aria-hidden="true"></i>
             </a>
             <div id="faq-item-4" class="collapse">
-              <p class="text-dark">Resposta aqui.
+              <p class="text-dark"> Sim, nós utilizamos AOS Animate que é uma lib com poderes de criar animações com os elementos conforme aparecem na tela, além de outras como essa do FAQ ao clicar nos botões
               </p>
             </div>
           </li>
           <li data-aos="fade-up" data-aos-delay="100" class="aos-init">
             <i class="fas fa-question-circle icon-help" aria-hidden="true"></i>
             <a data-bs-toggle="collapse" class="collapsed" href="#faq-item-5" onclick="return false;"
-              aria-expanded="false">Sua pergunta aqui?.
+              aria-expanded="false"> Foi utilizado bootstrap em que sentidos?
               <i class="fas fa-chevron-circle-down icon-show" aria-hidden="true"></i>
               <i class="fas fa-chevron-circle-up icon-close" aria-hidden="true"></i>
             </a>
             <div id="faq-item-5" class="collapse">
-              <p class="text-dark">Resposta aqui.
+              <p class="text-dark">Boostrap também é uma lib que facilita muito na questão da responsividade do site. 
               </p>
             </div>
           </li>
           <li data-aos="fade-up" data-aos-delay="100" class="aos-init">
             <i class="fas fa-question-circle icon-help" aria-hidden="true"></i>
             <a data-bs-toggle="collapse" class="collapsed" href="#faq-item-6" onclick="return false;"
-              aria-expanded="false">Sua pergunta aqui?.
+              aria-expanded="false">Frase de impacto?
               <i class="fas fa-chevron-circle-down icon-show" aria-hidden="true"></i>
               <i class="fas fa-chevron-circle-up icon-close" aria-hidden="true"></i>
             </a>
             <div id="faq-item-6" class="collapse">
-              <p class="text-dark">Resposta aqui.
+              <p class="text-dark"> "Quando digitalizei esse código, só eu e Deus sabia como funcionava. Hoje só Deus sabe"
               </p>
             </div>
           </li>
@@ -145,7 +147,6 @@
       </div>
     </div>
   </section>
-
 
 
   <!-- Particulas -->
@@ -167,10 +168,10 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-6 justify-content-center">
-          <p class="text-footer pt-3"> © Copyright 2021 Union Cop. Todos direitos reservados. </p>
+          <p class="text-footer pt-3"> © Copyright 2024. Todos direitos reservados. </p>
           <p> <a href="#" class="footer-brand">
-              <img id="logo-footer" src="img/logo.png" alt="Union Cop"></a> by <a class="text-light"
-              href="https://www.instagram.com/pyxelbots/"> PyxelSolutions </a>
+              <img id="logo-footer" src="img/logo.png" alt="Anchieta"></a> by <a class="text-light"
+              href="https://github.com/Dimiura/Trabalho-Framework"> Rafa, Di e Lucas</a>
             </a> </p>
         </div>
         <div class="col-md-6 justify-content-center">

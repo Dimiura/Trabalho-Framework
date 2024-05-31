@@ -27,4 +27,8 @@ app.get('/features', (req, res) => {
   res.render('features/index')
 });
 
+app.get('/tools', (req, res) => {
+  res.render('tools/index')
+});
+
 app.listen(3000, () => {console.log('Servidor ON, a porta é 3000')});
